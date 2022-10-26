@@ -35,7 +35,31 @@ html {
     z-index: -1;
   }
 
-
+  h1 {
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px black;
+    padding: 1rem;
+  }
+  
+  .main-title {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .drag-container {
+    margin: 20px;
+  }
+  
+  .drag-list {
+    display: flex;
+    align-items: flex-start;
+  }
 
 
 
