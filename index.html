@@ -48,9 +48,30 @@
             </div>
           </div>
 
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div>
+          </div>
+        </li>
 
-
-
+        <!-- 2 -->
+        <!-- progress column -->
+        <li class="drag-column progress-column">
+          <span class="header">
+            <h1>Progress</h1>
+          </span>
+          <!-- progress content -->
+          <div id="progress-content" class="custom-scroll">
+            <ul
+              class="drag-item-list"
+              id="progress-list"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              ondragenter="dragEnter(1)"
+            ></ul>
+            <!-- <li class="drag-item">Testing</li>
+                <li class="drag-item">Testing</li>
+                <li class="drag-item">Testing</li> -->
+          </div>
 
 
 
