@@ -35,9 +35,69 @@ html {
     z-index: -1;
   }
 
+  h1 {
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px black;
+    padding: 1rem;
+  }
+  
+  .main-title {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .drag-container {
+    margin: 20px;
+  }
+  
+  .drag-list {
+    display: flex;
+    align-items: flex-start;
+  }
 
-
-
+/* Columns */
+.drag-column {
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow-x: hidden;
+  }
+  
+  .backlog-column .header,
+  .backlog-column .solid,
+  .backlog-column .solid:hover,
+  .backlog-column .over {
+    background-color: var(--column-1);
+  }
+  
+  .progress-column .header,
+  .progress-column .solid,
+  .progress-column .solid:hover,
+  .progress-column .over {
+    background-color: var(--column-2);
+  }
+  
+  .complete-column .header,
+  .complete-column .solid,
+  .complete-column .solid:hover,
+  .complete-column .over {
+    background-color: var(--column-3);
+  }
+  
+  .on-hold-column .header,
+  .on-hold-column .solid,
+  .on-hold-column .solid:hover,
+  .on-hold-column .over {
+    background-color: var(--column-4);
+  }
 
 
 
