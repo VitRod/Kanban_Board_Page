@@ -18,7 +18,22 @@ html {
     --column-4: #e92a18;
   }
 
-
+  body {
+    margin: 0;
+    background: #d6d6d6;
+    color: white;
+    font-family: Quicksand, sans-serif;
+    overflow-y: hidden;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
 
 
 
