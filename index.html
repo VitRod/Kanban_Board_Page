@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kanban Board</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="favicon3.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="video-container">
+      <!-- <video src="./waterfall_clouds_forest_rock_HD.mp4" autoplay loop></video> -->
       <video id="myVideo" autoplay muted loop>
         <source src="./palm_water.mp4" />
       </video>
     </div>
-    
-  <h1 class="main-title">Kanban Board</h1>
+
+    <h1 class="main-title">Kanban Board</h1>
     <div class="drag-container">
       <ul class="drag-list">
         <!-- backlog column -->
@@ -22,8 +23,7 @@
           <span class="header">
             <h1>Backlog</h1>
           </span>
-    
-      <!-- Backlog content -->
+          <!-- Backlog content -->
           <div id="backlog-content">
             <ul
               class="drag-item-list"
@@ -36,7 +36,6 @@
               <li class="drag-item">Testing</li>
               <li class="drag-item">Testing</li> -->
           </div>
-
           <!-- add button group -->
           <div class="add-btn-group">
             <div class="add-btn add" onclick="showInputBox(0)">
@@ -52,7 +51,6 @@
             <div class="add-item" contenteditable="true"></div>
           </div>
         </li>
-
         <!-- 2 -->
         <!-- progress column -->
         <li class="drag-column progress-column">
@@ -72,8 +70,7 @@
                 <li class="drag-item">Testing</li>
                 <li class="drag-item">Testing</li> -->
           </div>
-
-        <!-- add button group -->
+          <!-- add button group -->
           <div class="add-btn-group">
             <div class="add-btn add" onclick="showInputBox(1)">
               <span class="plus-sign">+</span>
@@ -87,8 +84,7 @@
             <div class="add-item" contenteditable="true"></div>
           </div>
         </li>
-
-      <!-- 3 -->
+        <!-- 3 -->
         <!-- complete column -->
         <li class="drag-column complete-column">
           <span class="header">
@@ -121,8 +117,7 @@
             <div class="add-item" contenteditable="true"></div>
           </div>
         </li>
-
-      <!-- 4 -->
+        <!-- 4 -->
         <!-- On hold column -->
         <li class="drag-column on-hold-column">
           <span class="header">
@@ -158,14 +153,7 @@
         <!-- </div> -->
       </ul>
     </div>
-
-
-
-
-
-
-
-   <!-- Script -->
-   <script src="script.js"></script>
-</body>
-</html> 
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
