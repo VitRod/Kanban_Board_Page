@@ -135,7 +135,10 @@ html {
   font-size: 1.25rem;
 }
 
-
+/* Drag and Drop */
+.over {
+  padding: 50px 10px;
+}
 
 
 
