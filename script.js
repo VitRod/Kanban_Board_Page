@@ -175,7 +175,21 @@ function dragEnter(column) {
     currentColumn = column;
   }
 
-
+  function drop(e) {
+    e.preventDefault();
+    listColumns.forEach(column => {
+      column.classList.remove('over');
+    });
+    // add item to column
+    const parent = listColumns[currentColumn];
+    parent.appendChild(draggedItem);
+    dragging = false;
+    rebuildArrays();
+  }
+  
+  // on load
+  updateDOM();
+  
 
 
 
