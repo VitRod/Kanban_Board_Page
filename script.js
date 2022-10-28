@@ -124,9 +124,21 @@ function updateItem(id, column) {
     }
   }
 
+// add to column list
+function addToColumn(column) {
+    const itemText = addItems[column].textContent;
+    const selectedArray = listArrays[column];
+    selectedArray.push(itemText);
+    addItems[column].textContent = '';
+    updateDOM();
+  }
 
-
-
+// show Add Item Input Box
+function showInputBox(column) {
+    addBtns[column].style.visibility = 'hidden';
+    saveItemBtns[column].style.display = 'flex';
+    addItemContainers[column].style.display = 'flex';
+  }
 
 
 
