@@ -210,7 +210,12 @@ html {
   color: white;
 }
 
-
+.plus-sign {
+  font-size: 1.5rem;
+  margin-right: 5px;
+  position: relative;
+  top: -3px;
+}
 
 
 
