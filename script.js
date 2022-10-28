@@ -169,7 +169,11 @@ function allowDrop(e) {
     e.preventDefault();
   }
 
-
+// when item enter Column Area
+function dragEnter(column) {
+    listColumns[column].classList.add('over');
+    currentColumn = column;
+  }
 
 
 
