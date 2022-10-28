@@ -19,7 +19,10 @@ let progressListArray = [];
 let completeListArray = [];
 let onHoldListArray = [];
 
-
+// Drag Functionality
+let draggedItem;
+let dragging = false;
+let currentColumn;
 
 
 
