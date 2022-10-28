@@ -167,7 +167,18 @@ html {
   justify-content: space-between;
 }
 
-
+.add-btn {
+  margin: 10px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: fit-content;
+  border-radius: 5px;
+  transition: all 0.3s;
+  user-select: none;
+  box-shadow: 0 2px rgb(253, 252, 229);
+}
 
 
 
