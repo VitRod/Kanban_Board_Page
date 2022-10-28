@@ -140,7 +140,13 @@ function showInputBox(column) {
     addItemContainers[column].style.display = 'flex';
   }
 
-
+// Hide Item Input Box
+function hideInputBox(column) {
+    addBtns[column].style.visibility = 'visible';
+    saveItemBtns[column].style.display = 'none';
+    addItemContainers[column].style.display = 'none';
+    addToColumn(column);
+  }
 
 
 
