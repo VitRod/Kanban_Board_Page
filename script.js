@@ -71,7 +71,43 @@ function createItemEl(columnEl, column, item, index) {
     columnEl.appendChild(listEl);
   }
 
-
+// Update Columns in DOM - Reset HTML, Filter Array, Update localStorage
+function updateDOM() {
+    // Check localStorage once
+    if (!updatedOnLoad) {
+      getSavedColumns();
+    }
+    // Backlog Column
+    backlogList.textContent = '';
+    backlogListArray.forEach((backlogItem, index) => {
+      createItemEl(backlogList, 0, backlogItem, index);
+    });
+    backlogListArray = filterArray(backlogListArray);
+  
+    // Process Column
+    progressList.textContent = '';
+    progressListArray.forEach((progressItem, index) => {
+      createItemEl(progressList, 1, progressItem, index);
+    });
+    progressListArray = filterArray(progressListArray);
+  
+    // Complete Column
+    completeList.textContent = '';
+    completeListArray.forEach((completeItem, index) => {
+      createItemEl(completeList, 2, completeItem, index);
+    });
+    completeListArray = filterArray(completeListArray);
+  
+    // On Hold Column
+    onHoldList.textContent = '';
+    onHoldListArray.forEach((onHoldItem, index) => {
+      createItemEl(onHoldList, 3, onHoldItem, index);
+    });
+    onHoldListArray = filterArray(onHoldListArray);
+  
+    updatedOnLoad = true;
+    updateSavedColumns();
+  }
 
 
 
