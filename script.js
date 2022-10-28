@@ -12,7 +12,12 @@ const onHoldList = document.getElementById('on-hold-list');
 // Items
 let updatedOnLoad = false;
 
-
+// Initialize Arrays
+let listArrays = [];
+let backlogListArray = [];
+let progressListArray = [];
+let completeListArray = [];
+let onHoldListArray = [];
 
 
 
