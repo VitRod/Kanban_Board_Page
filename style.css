@@ -200,7 +200,15 @@ html {
   transform: translateY(4px);
 }
 
+.solid {
+  display: none;
+}
 
+.solid:hover {
+  transition: unset;
+  filter: brightness(95%);
+  color: white;
+}
 
 
 
