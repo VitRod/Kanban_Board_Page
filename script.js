@@ -50,7 +50,11 @@ function updateSavedColumns() {
     });
   }
 
-
+// filter array to remove empty items
+function filterArray(array) {
+    const filteredArray = array.filter(item => item !== null);
+    return filteredArray;
+  }
 
 
 
