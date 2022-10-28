@@ -162,7 +162,10 @@ html {
 }
 
 /* Add Button Group */
-
+.add-btn-group {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 
