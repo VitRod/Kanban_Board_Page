@@ -124,7 +124,14 @@ function updateItem(id, column) {
     }
   }
 
-
+// add to column list
+function addToColumn(column) {
+    const itemText = addItems[column].textContent;
+    const selectedArray = listArrays[column];
+    selectedArray.push(itemText);
+    addItems[column].textContent = '';
+    updateDOM();
+  }
 
 
 
