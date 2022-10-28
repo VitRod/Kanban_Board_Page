@@ -164,7 +164,10 @@ function drag(e) {
     dragging = true;
   }
 
-
+// column allows for item to drop
+function allowDrop(e) {
+    e.preventDefault();
+  }
 
 
 
