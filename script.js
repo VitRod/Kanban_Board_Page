@@ -133,7 +133,12 @@ function addToColumn(column) {
     updateDOM();
   }
 
-
+// show Add Item Input Box
+function showInputBox(column) {
+    addBtns[column].style.visibility = 'hidden';
+    saveItemBtns[column].style.display = 'flex';
+    addItemContainers[column].style.display = 'flex';
+  }
 
 
 
