@@ -242,7 +242,12 @@ html {
   outline: none;
 }
 
-
+/* Media Query: Laptop */
+@media screen and (max-width: 1800px) {
+  .main-title {
+    font-size: 2rem;
+  }
+}
 
 
 
