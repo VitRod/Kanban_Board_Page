@@ -158,7 +158,11 @@ function rebuildArrays() {
     updateDOM();
   }
 
-
+// when item starts dragging
+function drag(e) {
+    draggedItem = e.target;
+    dragging = true;
+  }
 
 
 
