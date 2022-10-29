@@ -198,6 +198,3 @@ function dragEnter(column) {
 
 
 
-
-
-
