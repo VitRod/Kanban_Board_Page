@@ -205,6 +205,3 @@ function dragEnter(column) {
 
 
 
-
-
-  
