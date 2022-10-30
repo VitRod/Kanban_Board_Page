@@ -194,5 +194,3 @@ function dragEnter(column) {
 
 
 
-
-
