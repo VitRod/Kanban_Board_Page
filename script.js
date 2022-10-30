@@ -192,5 +192,3 @@ function dragEnter(column) {
   
 
 
-
-
