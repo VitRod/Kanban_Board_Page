@@ -191,4 +191,3 @@ function dragEnter(column) {
   updateDOM();
   
 
-
